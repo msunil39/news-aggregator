@@ -12,6 +12,7 @@ A small project I built to scrape tech news from multiple sources, clean duplica
 
 ### Project Structure
 
+```
 news-aggregator/
 │
 ├── app/
@@ -23,75 +24,77 @@ news-aggregator/
 ├── tests/
 ├── requirements.txt
 └── README.md
-
+```
 
 ### Running the project
 
 Clone the repository:
 
-bash
+```bash
 git clone <repo-url>
 cd news-aggregator
-
+```
 
 Create virtual environment:
 
-bash
+```bash
 python -m venv venv
-
+```
 
 Activate environment:
 
 Windows:
 
-bash
+```bash
 venv\Scripts\activate
-
+```
 
 Linux / Mac:
 
-bash
+```bash
 source venv/bin/activate
-
+```
 
 Install dependencies:
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 Run API:
 
-bash
+```bash
 uvicorn app.main:app --reload
-
+```
 
 Open:
 
+```
 http://127.0.0.1:8000/docs
-
+```
 
 ### API Endpoints
 
+```
 GET    /
 POST   /scrape
 GET    /articles
 GET    /stats
-
+```
 
 Example:
 
-bash
+```bash
 curl -X POST http://127.0.0.1:8000/scrape
 
 curl http://127.0.0.1:8000/articles?limit=10
-
+```
 
 ### Running Tests
 
-bash
+```bash
 pytest -v
-
+```
 
 ### Tech Used
 
