@@ -22,6 +22,9 @@ news-aggregator/
 │   └── main.py
 │
 ├── tests/
+│   ├── test_cleaner.py
+│   └── test_database.py
+├── conftest.py
 ├── requirements.txt
 └── README.md
 ```
